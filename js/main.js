@@ -28,7 +28,7 @@ var quoteGenerator = (function () {
   };
 
   return {
-    init: initHandler
+    init: init
   };
 })();
 
