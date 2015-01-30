@@ -7,10 +7,10 @@ var quoteGenerator = (function () {
     return quotes[n];
   };
 
-  var init = function () {
-    $.get("/js/quotes.json", function(data) {
+  var init = function (options) {
+    $.get("js/quotes.json", function(data) {
       quotes = data;
-      initHandler();
+      initHandler(options);
     }, "json");
   };
 
