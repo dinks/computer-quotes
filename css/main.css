@@ -97,7 +97,7 @@ textarea {
 body {
     background-color: #253E66;
     color: #E3DFD7;
-    font-size: 4em;
+    font-size: 1em;
 }
 
 .container {
@@ -110,8 +110,8 @@ body {
 a, a:hover {
     color: #E3DFD7;
     text-decoration: none;
-    border: 1px solid #EF6555;
-    background-color: #253E56;
+    border: 1px solid #FFFFFF;
+    background-color: #3D4C53;
     padding: 0.3em;
     border-radius: 0.3em;
 }
@@ -197,9 +197,34 @@ a, a:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 768px) {
+    body {
+        font-size: 4em;
+    }
+}
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    body {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 35em) {
+    body {
+        font-size: 1.25em;
+    }
 }
 
 @media print,
